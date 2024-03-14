@@ -18,6 +18,9 @@
 		041C90082BA1AE8C00A18423 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 041C90072BA1AE8C00A18423 /* FirebaseAuth */; };
 		041C900A2BA1AE8C00A18423 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 041C90092BA1AE8C00A18423 /* FirebaseFirestore */; };
 		041C900C2BA1AE8C00A18423 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 041C900B2BA1AE8C00A18423 /* FirebaseStorage */; };
+		0425068C2BA2DC5F00DD2E89 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068B2BA2DC5F00DD2E89 /* FeedViewController.swift */; };
+		0425068E2BA2DC7400DD2E89 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068D2BA2DC7400DD2E89 /* UploadViewController.swift */; };
+		042506902BA2DC8400DD2E89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068F2BA2DC8400DD2E89 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		041C8FFA2BA1ADB400A18423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041C8FFC2BA1ADB400A18423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041C90022BA1AE2400A18423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0425068B2BA2DC5F00DD2E89 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0425068D2BA2DC7400DD2E89 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		0425068F2BA2DC8400DD2E89 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				041C8FEE2BA1ADB300A18423 /* AppDelegate.swift */,
 				041C8FF02BA1ADB300A18423 /* SceneDelegate.swift */,
 				041C8FF22BA1ADB300A18423 /* ViewController.swift */,
+				0425068B2BA2DC5F00DD2E89 /* FeedViewController.swift */,
+				0425068D2BA2DC7400DD2E89 /* UploadViewController.swift */,
+				0425068F2BA2DC8400DD2E89 /* SettingsViewController.swift */,
 				041C8FF42BA1ADB300A18423 /* Main.storyboard */,
 				041C8FF72BA1ADB400A18423 /* Assets.xcassets */,
 				041C8FF92BA1ADB400A18423 /* LaunchScreen.storyboard */,
@@ -160,8 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				041C8FF32BA1ADB300A18423 /* ViewController.swift in Sources */,
+				0425068E2BA2DC7400DD2E89 /* UploadViewController.swift in Sources */,
 				041C8FEF2BA1ADB300A18423 /* AppDelegate.swift in Sources */,
+				0425068C2BA2DC5F00DD2E89 /* FeedViewController.swift in Sources */,
 				041C8FF12BA1ADB300A18423 /* SceneDelegate.swift in Sources */,
+				042506902BA2DC8400DD2E89 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
