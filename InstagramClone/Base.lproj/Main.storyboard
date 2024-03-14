@@ -73,7 +73,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="NYz-dr-a3n">
             <objects>
-                <tabBarController id="KNx-Dg-jNE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="KNx-Dg-jNE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qCD-fa-pGE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xWW-dJ-ceK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram Clone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qst-Kk-tbx">
-                                <rect key="frame" x="37" y="70" width="288" height="78"/>
+                                <rect key="frame" x="37" y="70" width="288" height="31.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="uD8-Xh-nd2"/>
                                 </constraints>
@@ -108,7 +108,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9X-jr-qVP">
-                                <rect key="frame" x="28" y="376" width="128" height="70"/>
+                                <rect key="frame" x="28" y="329.33333333333331" width="128" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Jhc-ua-h2f"/>
                                     <constraint firstAttribute="width" constant="128" id="hhy-eT-wYM"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-9O-Lm8">
-                                <rect key="frame" x="28" y="198" width="306" height="34"/>
+                                <rect key="frame" x="28" y="151.33333333333334" width="306" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Jql-so-jFb"/>
                                 </constraints>
@@ -128,7 +128,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wBh-x6-gNg">
-                                <rect key="frame" x="28" y="262" width="306" height="34"/>
+                                <rect key="frame" x="28" y="215.33333333333334" width="306" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="eRk-Ca-lDn"/>
                                 </constraints>
@@ -136,7 +136,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psX-bh-j0l">
-                                <rect key="frame" x="206" y="376" width="128" height="70"/>
+                                <rect key="frame" x="206" y="329.33333333333331" width="128" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Wav-6S-Beq"/>
                                     <constraint firstAttribute="width" constant="128" id="qy0-zj-313"/>
