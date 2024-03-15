@@ -15,14 +15,53 @@
                     <view key="view" contentMode="scaleToFill" id="W5j-KR-a7p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uIH-9J-kYs">
+                                <rect key="frame" x="51" y="79" width="291" height="267"/>
+                                <color key="backgroundColor" white="0.59399584790000004" alpha="0.4584927721" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.59399584790000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="IVI-df-0K9"/>
+                                    <constraint firstAttribute="height" constant="270" id="vHC-cj-ksP"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkH-TS-RL2">
+                                <rect key="frame" x="51" y="387" width="291" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="QBZ-ZX-E9g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSV-fL-wnJ">
+                                <rect key="frame" x="141" y="444" width="110" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9pT-xw-Y83"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="umQ-ds-s67"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uIH-9J-kYs" firstAttribute="leading" secondItem="bkH-TS-RL2" secondAttribute="leading" id="0LS-AD-14S"/>
+                            <constraint firstItem="KSV-fL-wnJ" firstAttribute="top" secondItem="bkH-TS-RL2" secondAttribute="bottom" constant="23" id="5mE-uc-Pro"/>
+                            <constraint firstItem="uIH-9J-kYs" firstAttribute="top" secondItem="umQ-ds-s67" secondAttribute="top" constant="77.333333333333343" id="6gd-pJ-XA1"/>
+                            <constraint firstItem="uIH-9J-kYs" firstAttribute="trailing" secondItem="bkH-TS-RL2" secondAttribute="trailing" id="ZMe-fF-6if"/>
+                            <constraint firstItem="umQ-ds-s67" firstAttribute="bottom" secondItem="KSV-fL-wnJ" secondAttribute="bottom" constant="289" id="bh0-q3-EjN"/>
+                            <constraint firstItem="KSV-fL-wnJ" firstAttribute="centerX" secondItem="W5j-KR-a7p" secondAttribute="centerX" id="dAw-jQ-BIx"/>
+                            <constraint firstItem="KSV-fL-wnJ" firstAttribute="leading" secondItem="umQ-ds-s67" secondAttribute="leading" constant="141" id="dcp-Kd-AGC"/>
+                            <constraint firstItem="bkH-TS-RL2" firstAttribute="top" secondItem="uIH-9J-kYs" secondAttribute="bottom" constant="39.666666666666629" id="g0o-a2-hdT"/>
+                            <constraint firstItem="KSV-fL-wnJ" firstAttribute="centerX" secondItem="bkH-TS-RL2" secondAttribute="centerX" id="sCp-FQ-kAe"/>
+                            <constraint firstItem="uIH-9J-kYs" firstAttribute="leading" secondItem="umQ-ds-s67" secondAttribute="leading" constant="51" id="tra-R2-yuc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="Bih-Uf-PWk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8G7-k3-Vvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="-25"/>
+            <point key="canvasLocation" x="-300" y="-25.35211267605634"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ib1-JK-73F">
@@ -186,6 +225,7 @@
     </scenes>
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
