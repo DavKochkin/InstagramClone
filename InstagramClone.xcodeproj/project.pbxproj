@@ -21,6 +21,7 @@
 		0425068C2BA2DC5F00DD2E89 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068B2BA2DC5F00DD2E89 /* FeedViewController.swift */; };
 		0425068E2BA2DC7400DD2E89 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068D2BA2DC7400DD2E89 /* UploadViewController.swift */; };
 		042506902BA2DC8400DD2E89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425068F2BA2DC8400DD2E89 /* SettingsViewController.swift */; };
+		044C8C3D2BA8723C00F1E79F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C8C3C2BA8723C00F1E79F /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0425068B2BA2DC5F00DD2E89 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0425068D2BA2DC7400DD2E89 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		0425068F2BA2DC8400DD2E89 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		044C8C3C2BA8723C00F1E79F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				041C8FF92BA1ADB400A18423 /* LaunchScreen.storyboard */,
 				041C8FFC2BA1ADB400A18423 /* Info.plist */,
 				041C90022BA1AE2400A18423 /* GoogleService-Info.plist */,
+				044C8C3C2BA8723C00F1E79F /* FeedCell.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044C8C3D2BA8723C00F1E79F /* FeedCell.swift in Sources */,
 				041C8FF32BA1ADB300A18423 /* ViewController.swift in Sources */,
 				0425068E2BA2DC7400DD2E89 /* UploadViewController.swift in Sources */,
 				041C8FEF2BA1ADB300A18423 /* AppDelegate.swift in Sources */,
