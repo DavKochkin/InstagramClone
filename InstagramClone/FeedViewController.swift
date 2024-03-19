@@ -16,9 +16,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     var userEmailArray    = [String]()
-    var userCommentlArray = [String]()
+    var userCommentArray = [String]()
     var likeArray         = [Int]()
     var userImageArray    = [String]()
+    var documentIdArray   = [String]()
     
     
     override func viewDidLoad() {
@@ -35,21 +36,29 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let fireStoreDatabase = Firestore.firestore()
         
-        fireStoreDatabase.collection("Posts").addSnapshotListener { (snapshot, error ) in
+        fireStoreDatabase.collection("Posts").order(by: "date", descending: true).addSnapshotListener { (snapshot, error ) in
             if error != nil {
                 print(error?.localizedDescription)
             } else {
                 if snapshot?.isEmpty != true && snapshot != nil {
                     
+                    self.userImageArray.removeAll(keepingCapacity: false)
+                    self.userEmailArray.removeAll(keepingCapacity: false)
+                    self.userCommentArray.removeAll(keepingCapacity: false)
+                    self.likeArray.removeAll(keepingCapacity: false)
+                    self.documentIdArray.removeAll(keepingCapacity: false)
+                    
+                    
                     for document in snapshot!.documents {
                         let documentID = document.documentID
+                        self.documentIdArray.append(documentID)
                         
                         if let postedBy = document.get("postedBy") as? String {
                             self.userEmailArray.append(postedBy)
                         }
                         
                         if let postComment = document.get("postComment") as? String {
-                            self.userCommentlArray.append(postComment)
+                            self.userCommentArray.append(postComment)
                         }
                         
                         if let likes = document.get("likes") as? Int {
@@ -78,10 +87,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
-        cell.userEmailLabel.text = userEmailArray[indexPath.row]
-        cell.likeLabel.text      = String(likeArray[indexPath.row])
-        cell.commentLabel.text   = userCommentlArray[indexPath.row]
+        cell.userEmailLabel.text  = userEmailArray[indexPath.row]
+        cell.likeLabel.text       = String(likeArray[indexPath.row])
+        cell.commentLabel.text    = userCommentArray[indexPath.row]
         cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row ]))
+        cell.documentidLable.text = documentIdArray[indexPath.row]
         return cell
     }
     
