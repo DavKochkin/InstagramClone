@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import SDWebImage
+import OneSignalFramework
 
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -24,11 +25,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+            
         tableView.delegate   = self
         tableView.dataSource = self
         
         getDataFromFirestore()
+        
+        // PUSH Notification
+
+        let externalId = "8cc2ab29-a515-45e6-977e-55b456ac3e61"
+        OneSignal.login(externalId)
     }
     
     
