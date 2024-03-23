@@ -48,6 +48,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
+    func something()  {
+        print("Hello, everyone! ")
+    }
+    
     @IBAction func actionButtonClicked(_ sender: Any) {
         
         let storage = Storage.storage()
