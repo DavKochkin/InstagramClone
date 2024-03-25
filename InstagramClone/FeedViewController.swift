@@ -9,6 +9,11 @@ import UIKit
 import Firebase
 import SDWebImage
 import OneSignalFramework
+import OneSignalNotifications
+import OneSignalNotificationServiceExtension
+import OneSignalFrameworkWrapper
+import OneSignalExtension
+import OneSignalCore
 
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -35,6 +40,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         let externalId = "8cc2ab29-a515-45e6-977e-55b456ac3e61"
         OneSignal.login(externalId)
+        
+        // Player IDs
+        
+//        if let deviceState = OneSignal.getDeviceState() {
+//            let deviceId = deviceState.userId
+//            customData.put("onesignalCustomerId", deviceId);
+//        }
+        
+        
+        
     }
     
     

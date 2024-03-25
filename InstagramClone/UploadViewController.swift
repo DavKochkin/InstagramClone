@@ -47,10 +47,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(alert, animated: true)
         
     }
-    
-    func something()  {
-        print("Hello, everyone! ")
-    }
+
     
     @IBAction func actionButtonClicked(_ sender: Any) {
         
